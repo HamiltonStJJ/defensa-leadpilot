@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Defensa de titulación – LeadPilot</title>
+<meta name="description" content="Defensa del trabajo de titulación de Hamilton Steven Jumbo Jumbo, Carrera de Software, Universidad Técnica de Ambato.">
+<link rel="icon" href="img/uta-logo.png">
+<link rel="stylesheet" href="vendor/reveal/reveal.css">
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/deck.css">
+<link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="portada" data-transition="fade">
+<div class="frame dark" style="">
+<div style="position:absolute;left:90px;top:400px;width:560px;height:250px;background:#FFFFFF;border-radius:24px;display:flex;align-items:center;justify-content:center"><img src="img/uta-logo.png" alt="Logotipo de la Universidad Técnica de Ambato" style="width:500px;height:200px;object-fit:contain"></div>
+<div class="col" style="position:absolute;left:720px;top:100px;width:1124px;height:880px">
+<p style="font-size:32px;font-weight:700;color:#8DBEE8;letter-spacing:4px">UNIVERSIDAD TÉCNICA DE AMBATO</p>
+<p class="pk" style="font-size:26px;margin-top:10px">Facultad de Ingeniería en Sistemas, Electrónica e Industrial · Carrera de Software</p>
+<h1 class="serif w" style="font-size:60px;font-weight:700;line-height:1.12;margin-top:56px">Desarrollo de una aplicación con inteligencia artificial para atención y seguimiento de prospectos comerciales digitales</h1>
+<p class="pk" style="font-size:28px;font-style:italic;margin-top:44px">Trabajo de titulación, modalidad Proyecto de Investigación, previo a la obtención del título de Ingeniero de Software</p>
+<p class="w" style="font-size:32px;margin-top:40px"><span style="color:#8DBEE8"><b>Autor: </b></span>Hamilton Steven Jumbo Jumbo</p>
+<p class="w" style="font-size:32px;margin-top:8px"><span style="color:#8DBEE8"><b>Tutor: </b></span>Ing. Hernán Fabricio Naranjo Ávalos, Mg.</p>
+<p class="pk" style="font-size:26px;margin-top:auto">Ambato – Ecuador · Diciembre 2026</p>
+</div>
+</div>
+<aside class="notes">Buenos días, señores miembros del tribunal. Presento el trabajo de titulación: Desarrollo de una aplicación con inteligencia artificial para atención y seguimiento de prospectos comerciales digitales. La aplicación se llama LeadPilot y se implementó con empresas clientes de SEVNEL.</aside>
+</section>
+<section id="agenda">
+<div class="frame" style="">
+<img class="logo" src="img/uta-logo.png" alt="Logotipo de la Universidad Técnica de Ambato">
+<p class="foot">Hamilton Jumbo · Defensa de titulación · UTA – FISEI · Carrera de Software</p>
+<p class="pg">2</p>
+<p class="kicker">AGENDA</p>
+<h2 class="title">Contenido de la exposición</h2>
+<div class="body stagger">
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr;grid-template-rows:288px 288px;gap:58px 43px;width:100%"><div class="card col" style="padding:40px 44px;gap:14px"><div class="num" style="width:86px;height:86px;border-radius:43px"><p style="font-size:30px">1</p></div><p class="hs" style="font-size:40px;margin-top:18px">Introducción</p><p class="s" style="font-size:28px">Problema, contexto y antecedentes</p></div><div class="card col" style="padding:40px 44px;gap:14px"><div class="num" style="width:86px;height:86px;border-radius:43px"><p style="font-size:30px">2</p></div><p class="hs" style="font-size:40px;margin-top:18px">Objetivos</p><p class="s" style="font-size:28px">General y específicos</p></div><div class="card col" style="padding:40px 44px;gap:14px"><div class="num" style="width:86px;height:86px;border-radius:43px"><p style="font-size:30px">3</p></div><p class="hs" style="font-size:40px;margin-top:18px">Metodología</p><p class="s" style="font-size:28px">Enfoque, instrumentos, población</p></div><div class="card col" style="padding:40px 44px;gap:14px"><div class="num" style="width:86px;height:86px;border-radius:43px"><p style="font-size:30px">4</p></div><p class="hs" style="font-size:40px;margin-top:18px">Desarrollo</p><p class="s" style="font-size:28px">Diagnóstico, diseño, Scrum–XP, LeadPilot</p></div><div class="card col" style="padding:40px 44px;gap:14px"><div class="num" style="width:86px;height:86px;border-radius:43px"><p style="font-size:30px">5</p></div><p class="hs" style="font-size:40px;margin-top:18px">Resultados</p><p class="s" style="font-size:28px">Indicadores del piloto vs. línea base</p></div><div class="card col" style="padding:40px 44px;gap:14px"><div class="num" style="width:86px;height:86px;border-radius:43px"><p style="font-size:30px">6</p></div><p class="hs" style="font-size:40px;margin-top:18px">Conclusiones</p><p class="s" style="font-size:28px">Conclusiones y recomendaciones</p></div></div>
+</div>
+</div>
+<aside class="notes">La exposición sigue la estructura sugerida por la facultad: introducción, objetivos, metodología, desarrollo de la propuesta, resultados alineados con cada objetivo y conclusiones. Tiempo estimado: 20 a 25 minutos.</aside>
+</section>
+<section id="problema">
+<div class="frame" style="">
+<img class="logo" src="img/uta-logo.png" alt="Logotipo de la Universidad Técnica de Ambato">
+<p class="foot">Hamilton Jumbo · Defensa de titulación · UTA – FISEI · Carrera de Software</p>
+<p class="pg">3</p>
+<p class="kicker">INTRODUCCIÓN</p>
+<h2 class="title">El problema: la atención depende del personal</h2>
+<div class="body stagger">
+
+<div style="position:relative;width:1180px;height:720px">
+<svg class="lines" aria-hidden="true" style="position:absolute;left:0;top:0;overflow:visible" width="1" height="1"><line x1="360" y1="190" x2="520" y2="270" stroke="#2F6FA8" stroke-width="3" stroke-linecap="round" pathLength="400"/><line x1="820" y1="190" x2="660" y2="270" stroke="#2F6FA8" stroke-width="3" stroke-linecap="round" pathLength="400"/><line x1="360" y1="530" x2="520" y2="460" stroke="#2F6FA8" stroke-width="3" stroke-linecap="round" pathLength="400"/><line x1="820" y1="530" x2="660" y2="460" stroke="#2F6FA8" stroke-width="3" stroke-linecap="round" pathLength="400"/></svg>
+<div class="ellipse center-pop" style="position:absolute;left:388px;top:226px;width:404px;height:274px;background:#00345C"></div>
+<p style="position:absolute;left:422px;top:310px;width:336px;font-size:32px;font-weight:700;color:#FFFFFF;text-align:center">Pérdida de oportunidades comerciales</p>
+<div style="position:absolute;left:0;top:0"><div class="card row" style="width:500px;height:190px;align-items:center;gap:24px;padding:0 28px"><img src="img/n_users.png" alt="" style="width:72px;height:72px;object-fit:contain"><div class="col" style="gap:6px;flex:1"><p class="t" style="font-weight:700;font-size:26px">Disponibilidad limitada del personal</p><p class="serif" style="font-size:34px;font-weight:700;color:#00345C">42 h de 168 h a la semana</p></div></div></div>
+<div style="position:absolute;left:640px;top:0"><div class="card row" style="width:500px;height:190px;align-items:center;gap:24px;padding:0 28px"><img src="img/n_layers.png" alt="" style="width:72px;height:72px;object-fit:contain"><div class="col" style="gap:6px;flex:1"><p class="t" style="font-weight:700;font-size:26px">Gestión manual de canales dispersos</p><p class="serif" style="font-size:34px;font-weight:700;color:#00345C">100 % pierde continuidad</p></div></div></div>
+<div style="position:absolute;left:0;top:530px"><div class="card row" style="width:500px;height:190px;align-items:center;gap:24px;padding:0 28px"><img src="img/n_db.png" alt="" style="width:72px;height:72px;object-fit:contain"><div class="col" style="gap:6px;flex:1"><p class="t" style="font-weight:700;font-size:26px">Sin información centralizada ni historial</p><p class="serif" style="font-size:34px;font-weight:700;color:#00345C">83,3 % sin registro del estado</p></div></div></div>
+<div style="position:absolute;left:640px;top:530px"><div class="card row" style="width:500px;height:190px;align-items:center;gap:24px;padding:0 28px"><img src="img/n_redo.png" alt="" style="width:72px;height:72px;object-fit:contain"><div class="col" style="gap:6px;flex:1"><p class="t" style="font-weight:700;font-size:26px">Sin seguimiento estructurado</p><p class="serif" style="font-size:34px;font-weight:700;color:#00345C">≤ 20 % recontactado</p></div></div></div>
+</div>
+<div class="col" style="width:540px;gap:22px"><div class="cardw col" style="padding:24px 40px;height:324px;justify-content:center"><p class="big" style="font-size:108px;line-height:1.1" data-count>7×</p><p class="s" style="font-size:28px">más probabilidad de calificar un lead si se contacta en la primera hora</p></div><div class="cardw col" style="padding:24px 40px;height:324px;justify-content:center"><p class="big" style="font-size:108px;line-height:1.1" data-count>42 h</p><p class="s" style="font-size:28px">tiempo promedio de respuesta de las empresas auditadas (1,25 M leads)</p></div>
+<p class="m">Tarjetas: encuesta a SEVNEL (n = 12). 7× y 42 h: Oldroyd et al. (2011), HBR</p></div>
+</div>
+</div>
+<aside class="notes">Las empresas que venden por mensajería dependen de su personal. Identificamos cuatro causas, con su cifra del diagnóstico: disponibilidad limitada del personal: solo 42 de las 168 horas semanales tenían atención humana, gestión manual de canales dispersos: el 100 % del personal reportó pérdida de continuidad, ausencia de información centralizada: el 83,3 % reportó dificultad para registrar el estado del prospecto, y falta de seguimiento: como máximo el 20 % de los prospectos sin compra era recontactado. El efecto común es la pérdida de oportunidades. La literatura lo respalda: contactar en la primera hora da siete veces más probabilidad de calificar al prospecto, y el promedio real de respuesta fue de 42 horas.</aside>
+</section>
+<section id="contexto">
+<div class="frame" style="">
+<img class="logo" src="img/uta-logo.png" alt="Logotipo de la Universidad Técnica de Ambato">
+<p class="foot">Hamilton Jumbo · Defensa de titulación · UTA – FISEI · Carrera de Software</p>
+<p class="pg">4</p>
+<p class="kicker">INTRODUCCIÓN</p>
+<h2 class="title">Contexto del estudio y pregunta de investigación</h2>
+<div class="body stagger">
+
+<div class="card col" style="width:806px;padding:32px 50px;gap:12px">
+<p class="hs" style="font-size:44px">SEVNEL</p>
+<p class="t">Plataforma de gestión comercial integrada con GoHighLevel. Sus empresas clientes atienden prospectos por WhatsApp, Instagram y Facebook.</p>
+<p class="t" style="font-weight:700;color:#4A4F57;margin-top:20px">Lo que reportaron sus 12 integrantes:</p>
+<div class="row" style="align-items:center;gap:24px;height:100px"><p class="big" style="font-size:44px;width:180px;flex:none">6 / 12</p><p class="t">fuera de horario, generalmente no se respondía</p></div><div class="row" style="align-items:center;gap:24px;height:100px"><p class="big" style="font-size:44px;width:180px;flex:none">12 / 12</p><p class="t">atención humana de hasta 8 horas diarias</p></div><div class="row" style="align-items:center;gap:24px;height:100px"><p class="big" style="font-size:44px;width:180px;flex:none">12 / 12</p><p class="t">como máximo el 20 % de prospectos sin compra recibía recontacto</p></div></div>
+<div class="col" style="flex:1;padding:30px 0 0 40px;gap:30px">
+<img src="img/n_q.png" alt="" style="width:115px;height:115px;object-fit:contain">
+<p class="serif" style="font-size:44px;font-style:italic;color:#00345C;line-height:1.2">¿De qué manera una aplicación basada en inteligencia artificial incide en la atención y seguimiento de prospectos comerciales digitales en empresas integradas a la plataforma objeto de estudio?</p>
+<p class="lbl">Pregunta de investigación</p></div>
+</div>
+</div>
+<aside class="notes">El estudio se realizó con las empresas clientes de SEVNEL, plataforma integrada con GoHighLevel. Los doce integrantes de SEVNEL reportaron que fuera del horario generalmente no se respondía, que la atención humana se limitaba a ocho horas diarias y que como máximo el 20 % de los prospectos sin compra recibía un recontacto. De ahí surge la pregunta de investigación.</aside>
+</section>
+<section id="antecedentes">
+<div class="frame" style="">
+<img class="logo" src="img/uta-logo.png" alt="Logotipo de la Universidad Técnica de Ambato">
+<p class="foot">Hamilton Jumbo · Defensa de titulación · UTA – FISEI · Carrera de Software</p>
+<p class="pg">5</p>
+<p class="kicker">ANTECEDENTES INVESTIGATIVOS</p>
+<h2 class="title">Nueve estudios respaldan la automatización</h2>
+<div class="body stagger">
+
+<div class="col" style="width:1008px"><p class="chart-t">Variables abordadas en los antecedentes (n = 9)</p><div class="col" style="gap:18px;flex:1;justify-content:space-around"><div class="hbar" style="--i:1"><p class="lab" style="width:300px">Automatización</p><div class="trk"><div class="bar" style="width:79.2%"></div><p class="val">9</p></div></div><div class="hbar" style="--i:2"><p class="lab" style="width:300px">Disponibilidad 24/7</p><div class="trk"><div class="bar" style="width:70.4%"></div><p class="val">8</p></div></div><div class="hbar" style="--i:3"><p class="lab" style="width:300px">Mejora de conversión</p><div class="trk"><div class="bar" style="width:70.4%"></div><p class="val">8</p></div></div><div class="hbar" style="--i:4"><p class="lab" style="width:300px">Reducción de costos</p><div class="trk"><div class="bar" style="width:61.6%"></div><p class="val">7</p></div></div><div class="hbar" style="--i:5"><p class="lab" style="width:300px">Personalización</p><div class="trk"><div class="bar" style="width:61.6%"></div><p class="val">7</p></div></div><div class="hbar" style="--i:6"><p class="lab" style="width:300px">Satisfacción del cliente</p><div class="trk"><div class="bar" style="width:52.8%"></div><p class="val">6</p></div></div><div class="hbar" style="--i:7"><p class="lab" style="width:300px">Integración CRM</p><div class="trk"><div class="bar" style="width:52.8%"></div><p class="val">6</p></div></div></div></div>
+<div class="col" style="flex:1;gap:22px"><div class="card col" style="padding:22px 36px;height:212px;gap:6px"><p class="big" style="font-size:48px">41 %</p><p class="t" style="font-size:26px">de los chatbots se implementa en ventas y 37 % en soporte</p><p class="m" style="margin-top:auto">Misischia et al., 2022</p></div><div class="card col" style="padding:22px 36px;height:212px;gap:6px"><p class="big" style="font-size:48px">β = 0,556</p><p class="t" style="font-size:26px">calidad de recuperación del servicio → satisfacción</p><p class="m" style="margin-top:auto">Hsu y Lin, 2023</p></div><div class="card col" style="padding:22px 36px;height:212px;gap:6px"><p class="big" style="font-size:48px">24/7</p><p class="t" style="font-size:26px">la disponibilidad continua es el principal diferenciador frente a la atención humana</p><p class="m" style="margin-top:auto">Prasad et al., 2024</p></div></div>
+</div>
+</div>
+<aside class="notes">Se revisaron nueve antecedentes, 66,7 % publicados entre 2022 y 2026; 55,6 % son empíricos cuantitativos. Las dimensiones más abordadas coinciden con las variables del proyecto: automatización, disponibilidad 24/7 y conversión. Destaco tres hallazgos: el 41 % de los chatbots se usa en ventas, la calidad del servicio se asocia con la satisfacción y la disponibilidad continua es el diferenciador principal. Sus resultados se usan como referencia, no como evidencia directa del caso.</aside>
+</section>
+<section id="objetivos">
+<div class="frame" style="">
+<img class="logo" src="img/uta-logo.png" alt="Logotipo de la Universidad Técnica de Ambato">
+<p class="foot">Hamilton Jumbo · Defensa de titulación · UTA – FISEI · Carrera de Software</p>
+<p class="pg">6</p>
+<p class="kicker">OBJETIVOS</p>
+<h2 class="title">Objetivos de la investigación</h2>
+<div class="body stagger">
+
+<div class="col" style="width:100%;gap:43px">
+<div class="cardm col" style="padding:24px 50px;gap:10px"><p class="lbl" style="color:#8DBEE8">OBJETIVO GENERAL</p>
+<p class="w" style="font-size:32px;line-height:1.25">Desarrollar una aplicación basada en IA para atención y seguimiento de prospectos comerciales digitales en las empresas integradas en la plataforma, evaluando su incidencia en el tiempo de respuesta, la cobertura horaria, el seguimiento y la conversión durante 2026.</p></div>
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:36px;flex:1"><div class="card col" style="padding:32px 40px;gap:14px"><div class="num g" style="width:108px;height:108px;border-radius:54px"><p style="font-size:30px">OE1</p></div><p class="hs" style="font-size:40px;margin-top:10px">Diagnosticar</p><p class="t">el proceso actual de atención y seguimiento, identificando brechas de tiempo de respuesta, cobertura horaria, continuidad y seguimiento.</p></div><div class="card col" style="padding:32px 40px;gap:14px"><div class="num g" style="width:108px;height:108px;border-radius:54px"><p style="font-size:30px">OE2</p></div><p class="hs" style="font-size:40px;margin-top:10px">Diseñar</p><p class="t">la arquitectura funcional y los requerimientos de la aplicación, según el proceso comercial, los canales y los indicadores.</p></div><div class="card col" style="padding:32px 40px;gap:14px"><div class="num g" style="width:108px;height:108px;border-radius:54px"><p style="font-size:30px">OE3</p></div><p class="hs" style="font-size:40px;margin-top:10px">Implementar y evaluar</p><p class="t">la aplicación con indicadores comparativos entre el escenario de atención manual y el automatizado.</p></div></div></div>
+</div>
+</div>
+<aside class="notes">El objetivo general fue desarrollar la aplicación y evaluar su incidencia en cuatro indicadores. Para ello se plantearon tres objetivos específicos: diagnosticar el proceso actual, diseñar la arquitectura funcional e implementar y evaluar la aplicación comparando el escenario manual con el automatizado. Los resultados se presentan alineados a cada uno.</aside>
+</section>
+<section id="metodologia">
+<div class="frame" style="">
+<img class="logo" src="img/uta-logo.png" alt="Logotipo de la Universidad Técnica de Ambato">
+<p class="foot">Hamilton Jumbo · Defensa de titulación · UTA – FISEI · Carrera de Software</p>
+<p class="pg">7</p>
+<p class="kicker">METODOLOGÍA DE INVESTIGACIÓN</p>
+<h2 class="title">Enfoque mixto con tres instrumentos triangulados</h2>
+<div class="body stagger">
+
+<div class="col" style="width:100%;gap:40px"><div class="row" style="gap:28px"><p class="pill">Enfoque mixto</p><p class="pill">Descriptiva</p><p class="pill">De campo</p><p class="pill">Bibliográfica-documental</p><p class="pill">Aplicada</p></div>
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:36px;flex:1"><div class="cardw col" style="padding:36px 44px;gap:18px"><div class="ic" style="width:122px;height:122px;border-radius:61px"><img src="img/i_mic.png" alt="" style="width:64px;height:64px"></div><p class="hs">Entrevista al CEO</p><ul class="b" style=""><li>Semiestructurada</li><li>20 preguntas abiertas en 4 bloques</li><li>≈ 24 min, 9-sep-2026</li><li>Análisis en ATLAS.ti 26</li></ul></div><div class="cardw col" style="padding:36px 44px;gap:18px"><div class="ic" style="width:122px;height:122px;border-radius:61px"><img src="img/i_list.png" alt="" style="width:64px;height:64px"></div><p class="hs">Encuesta censal</p><ul class="b" style=""><li>12 integrantes de SEVNEL</li><li>29 preguntas en 5 secciones</li><li>Estimaciones por intervalos con su fuente</li><li>Frecuencias y porcentajes</li></ul></div><div class="cardw col" style="padding:36px 44px;gap:18px"><div class="ic" style="width:122px;height:122px;border-radius:61px"><img src="img/i_book.png" alt="" style="width:64px;height:64px"></div><p class="hs">Fichas documentales</p><ul class="b" style=""><li>9 estudios científicos</li><li>Objetivo, método, resultados</li><li>Aporte a la propuesta</li><li>Base de la triangulación</li></ul></div></div></div>
+</div>
+</div>
+<aside class="notes">La investigación es de enfoque mixto y carácter descriptivo; de campo, porque obtuvo datos primarios de SEVNEL, y bibliográfica-documental. Es aplicada, porque los hallazgos fundamentan requerimientos de software. Se usaron tres instrumentos: la entrevista al CEO, analizada en ATLAS.ti; la encuesta censal a los 12 integrantes; y las fichas de los 9 antecedentes. Como el CEO participó en ambos instrumentos, no se consideran fuentes completamente independientes.</aside>
+</section>
+<section id="poblacion">
+<div class="frame" style="">
+<img class="logo" src="img/uta-logo.png" alt="Logotipo de la Universidad Técnica de Ambato">
+<p class="foot">Hamilton Jumbo · Defensa de titulación · UTA – FISEI · Carrera de Software</p>
+<p class="pg">8</p>
+<p class="kicker">METODOLOGÍA DE INVESTIGACIÓN</p>
+<h2 class="title">Población, muestra y validez del instrumento</h2>
+<div class="body stagger">
+
+<div class="col" style="width:100%;gap:43px">
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:50px">
+<div class="card col" style="padding:24px 44px;gap:14px"><p class="h" style="font-size:34px">Población finita: personal de SEVNEL</p><p class="big" style="font-size:52px;color:#1B2430">N = 12  →  n = 12 (censo)</p><p class="s" style="font-size:28px">Dirección, ventas, administración, soporte, desarrollo e integraciones. Sin fórmula de muestreo por tamaño y accesibilidad.</p></div>
+<div class="card col" style="padding:24px 44px;gap:14px"><p class="h" style="font-size:34px">Población infinita: conversaciones comerciales</p><p class="big" style="font-size:52px;color:#1B2430">n = Z²·p·q / e² = 384,16 ≈ 385</p><p class="s" style="font-size:28px">Tamaño referencial (Z = 1,96; p = q = 0,5; e = 0,05). En el piloto se analizaron 9 327 prospectos de 4 empresas (A–D), elegidas por conveniencia.</p></div>
+</div>
+<div class="cardw row" style="padding:32px 50px;gap:40px;flex:1"><img src="img/n_shield.png" alt="" style="width:100px;height:100px;object-fit:contain">
+<div class="col" style="gap:12px;flex:1"><p class="h" style="font-size:34px">Validación y alfa de Cronbach</p>
+<p class="t">El cuestionario pasó de 15 ítems Likert a 29 preguntas tras la revisión del tutor. No se calculó un alfa de Cronbach global: el instrumento combina selección única y múltiple, estimaciones ordinales de distintos indicadores y escalas que no forman una dimensión homogénea. La consistencia se verificó con valores admisibles, consentimiento y categorías excluyentes.</p></div></div></div>
+</div>
+</div>
+<aside class="notes">Se trabajó con dos poblaciones. La primera, finita: los 12 integrantes de SEVNEL, con censo. La segunda, las conversaciones comerciales, de tamaño indeterminado; el tamaño referencial es 385, y el piloto superó ampliamente esa cifra con 9 327 prospectos. Sobre el alfa de Cronbach: no se calculó un coeficiente global porque el instrumento no es una escala unidimensional; lo reconozco como limitación, junto con la ausencia de un panel de expertos.</aside>
+</section>
+<section id="atlas">
+<div class="frame" style="">
+<img class="logo" src="img/uta-logo.png" alt="Logotipo de la Universidad Técnica de Ambato">
+<p class="foot">Hamilton Jumbo · Defensa de titulación · UTA – FISEI · Carrera de Software</p>
+<p class="pg">9</p>
+<p class="kicker">RESULTADOS OE1 · DIAGNÓSTICO</p>
+<h2 class="title">Entrevista al CEO analizada en ATLAS.ti</h2>
+<div class="body stagger">
+
+<div class="col" style="width:518px;gap:20px"><div class="card row" style="height:141px;align-items:center;gap:20px;padding:0 36px"><p class="big" style="font-size:64px;width:120px;flex:none">42</p><p class="t" style="font-size:26px">códigos (28 deductivos, 14 emergentes)</p></div><div class="card row" style="height:141px;align-items:center;gap:20px;padding:0 36px"><p class="big" style="font-size:64px;width:120px;flex:none">7</p><p class="t" style="font-size:26px">categorías</p></div><div class="card row" style="height:141px;align-items:center;gap:20px;padding:0 36px"><p class="big" style="font-size:64px;width:120px;flex:none">78</p><p class="t" style="font-size:26px">citas textuales</p></div>
+<div class="cardm col" style="padding:24px 36px;gap:12px;flex:1"><p class="serif w" style="font-size:28px;font-style:italic">«No hemos tenido una empresa que responda en menos de cinco minutos»</p><p style="font-size:24px;font-weight:700;color:#8DBEE8;margin-top:auto">E01-CEO, P4</p></div></div>
+<div class="col" style="flex:1"><p class="chart-t">Citas por código de brechas y factores asociados (31 citas)</p><div class="col" style="gap:10px;flex:1;justify-content:space-around"><div class="hbar" style="--i:1"><p class="lab" style="width:330px">Cobertura horaria</p><div class="trk"><div class="bar" style="width:77.0%"></div><p class="val">7</p></div></div><div class="hbar" style="--i:2"><p class="lab" style="width:330px">Seguimiento comercial</p><div class="trk"><div class="bar" style="width:55.0%"></div><p class="val">5</p></div></div><div class="hbar" style="--i:3"><p class="lab" style="width:330px">Carga operativa</p><div class="trk"><div class="bar" style="width:44.0%"></div><p class="val">4</p></div></div><div class="hbar" style="--i:4"><p class="lab" style="width:330px">Continuidad conversacional</p><div class="trk"><div class="bar" style="width:33.0%"></div><p class="val">3</p></div></div><div class="hbar" style="--i:5"><p class="lab" style="width:330px">Costo de personal</p><div class="trk"><div class="bar" style="width:33.0%"></div><p class="val">3</p></div></div><div class="hbar" style="--i:6"><p class="lab" style="width:330px">Pérdida de oportunidad</p><div class="trk"><div class="bar" style="width:33.0%"></div><p class="val">3</p></div></div><div class="hbar" style="--i:7"><p class="lab" style="width:330px">Tiempo de respuesta</p><div class="trk"><div class="bar" style="width:22.0%"></div><p class="val">2</p></div></div><div class="hbar" style="--i:8"><p class="lab" style="width:330px">Cierre presencial</p><div class="trk"><div class="bar" style="width:22.0%"></div><p class="val">2</p></div></div><div class="hbar" style="--i:9"><p class="lab" style="width:330px">Factor humano</p><div class="trk"><div class="bar" style="width:11.0%"></div><p class="val">1</p></div></div><div class="hbar" style="--i:10"><p class="lab" style="width:330px">Pico nocturno</p><div class="trk"><div class="bar" style="width:11.0%"></div><p class="val">1</p></div></div></div></div>
+</div>
+</div>
+<aside class="notes">La transcripción se codificó en ATLAS.ti 26 con estrategia deductiva-inductiva: 42 códigos, 7 categorías y 78 citas. En las brechas y factores, la cobertura horaria fue el código más citado (7), seguido del seguimiento comercial (5) y la carga operativa (4). Emergieron hallazgos no previstos: la franja nocturna, el costo del personal y que la venta se cierra en el local. [Si desea, mostrar aquí las redes semánticas o el Sankey de ATLAS.ti en una diapositiva de respaldo.]</aside>
+</section>
+<section id="encuesta">
+<div class="frame" style="">
+<img class="logo" src="img/uta-logo.png" alt="Logotipo de la Universidad Técnica de Ambato">
+<p class="foot">Hamilton Jumbo · Defensa de titulación · UTA – FISEI · Carrera de Software</p>
+<p class="pg">10</p>
+<p class="kicker">RESULTADOS OE1 · DIAGNÓSTICO</p>
+<h2 class="title">Encuesta: dificultades en la mayoría de empresas</h2>
+<div class="body stagger">
+
+<div class="col" style="width:1094px"><p class="chart-t">Personal que reporta la dificultad en la mayoría o todas las empresas (n = 12)</p><div class="col" style="gap:18px;flex:1;justify-content:space-around"><div class="hbar" style="--i:1"><p class="lab" style="width:470px">P5 Demora en primera respuesta</p><div class="trk"><div class="bar" style="width:88.0%"></div><p class="val">100,0 %</p></div></div><div class="hbar" style="--i:2"><p class="lab" style="width:470px">P6 Atención noches y fines de semana</p><div class="trk"><div class="bar" style="width:88.0%"></div><p class="val">100,0 %</p></div></div><div class="hbar" style="--i:3"><p class="lab" style="width:470px">P7 Pérdida de continuidad entre canales</p><div class="trk"><div class="bar" style="width:88.0%"></div><p class="val">100,0 %</p></div></div><div class="hbar" style="--i:4"><p class="lab" style="width:470px">P8 Solicitud repetida de información</p><div class="trk"><div class="bar" style="width:58.7%"></div><p class="val">66,7 %</p></div></div><div class="hbar" style="--i:5"><p class="lab" style="width:470px">P9 Prospectos sin nuevo contacto</p><div class="trk"><div class="bar" style="width:88.0%"></div><p class="val">100,0 %</p></div></div><div class="hbar" style="--i:6"><p class="lab" style="width:470px">P10 Registro del estado del prospecto</p><div class="trk"><div class="bar" style="width:73.3%"></div><p class="val">83,3 %</p></div></div><div class="hbar" style="--i:7"><p class="lab" style="width:470px">P11 Consultas repetitivas</p><div class="trk"><div class="bar" style="width:88.0%"></div><p class="val">100,0 %</p></div></div></div></div>
+<div class="card col" style="flex:1;padding:28px 40px;gap:22px"><p class="h" style="font-size:32px">Estimaciones de la atención manual</p><div class="col" style="gap:4px"><p class="serif" style="font-size:36px;font-weight:700">50 % / 50 %</p><p class="s">primera respuesta de 5–15 min / 15–30 min</p></div><div class="col" style="gap:4px"><p class="serif" style="font-size:36px;font-weight:700">100 %</p><p class="s">atención humana hasta 8 h diarias</p></div><div class="col" style="gap:4px"><p class="serif" style="font-size:36px;font-weight:700">100 %</p><p class="s">seguimiento de 0 % a 20 %</p></div><div class="col" style="gap:4px"><p class="serif" style="font-size:36px;font-weight:700">100 %</p><p class="s">valoró indispensables la cobertura, el historial y el seguimiento automático</p></div></div>
+</div>
+</div>
+<aside class="notes">En cinco de siete dificultades, el 100 % del personal indicó que se presentaban en la mayoría o en todas las empresas que conoce. Las estimaciones provinieron de reuniones internas (66,7 %) o de información verbal de las empresas (33,3 %), no de registros. Estas dificultades son reportadas por el personal, no medidas empresa por empresa.</aside>
+</section>
+<section id="linea-base">
+<div class="frame" style="">
+<img class="logo" src="img/uta-logo.png" alt="Logotipo de la Universidad Técnica de Ambato">
+<p class="foot">Hamilton Jumbo · Defensa de titulación · UTA – FISEI · Carrera de Software</p>
+<p class="pg">11</p>
+<p class="kicker">RESULTADOS OE1 · DIAGNÓSTICO</p>
+<h2 class="title">Línea base estimada del escenario manual</h2>
+<div class="body stagger">
+
+<div style="width:1195px"><table class="tb" style="font-size:28px"><tr class="hd"><th style="width:42%">Indicador</th><th style="width:37%">Valor de referencia</th><th style="width:21%">Origen</th></tr><tr><td>Primera respuesta en horario laboral</td><td>16,25 minutos</td><td>P15 · CEO P4</td></tr><tr><td>Primera respuesta fuera de horario</td><td>24 h o más / no se respondía</td><td>P16 · CEO P16</td></tr><tr><td>Cobertura horaria</td><td>42 h semanales (25 % de 168 h)</td><td>P17, P18 · CEO P5</td></tr><tr><td>Prospectos sin compra con seguimiento</td><td>10 % (punto medio de 0–20 %)</td><td>P19 · CEO P7</td></tr><tr><td>Tiempo hasta el seguimiento</td><td>1,8 h cuando existía</td><td>P20 · CEO P18</td></tr><tr><td>Conversión en ventas</td><td>8,1 % (rango 0–20 %)</td><td>P21 · CEO P19</td></tr></table></div>
+<div class="card col" style="flex:1;padding:30px 36px;gap:22px"><p class="h" style="font-size:30px">Media ponderada de puntos medios</p>
+<p class="serif" style="font-size:44px;font-weight:700;text-align:center">x̄ = Σ fᵢ·mᵢ / Σ fᵢ</p>
+<p class="s" style="text-align:center">Ej.: (6·10 + 6·22,5) / 12 = 16,25 min</p>
+<p class="t" style="font-style:italic;margin-top:30px">Las empresas no conservaban registros de su atención manual: cada valor es una estimación del personal, no una medición.</p></div>
+</div>
+</div>
+<aside class="notes">Como no existían registros históricos, la línea base se construyó con las estimaciones convergentes de la encuesta y la entrevista, usando la media ponderada de los puntos medios de los intervalos. Por ejemplo, 16,25 minutos para la primera respuesta y 42 horas semanales de atención humana. Esta línea base es la referencia del tercer objetivo.</aside>
+</section>
+<section id="brechas">
+<div class="frame" style="">
+<img class="logo" src="img/uta-logo.png" alt="Logotipo de la Universidad Técnica de Ambato">
+<p class="foot">Hamilton Jumbo · Defensa de titulación · UTA – FISEI · Carrera de Software</p>
+<p class="pg">12</p>
+<p class="kicker">RESULTADOS OE1 · DIAGNÓSTICO</p>
+<h2 class="title">Cuatro brechas frente a lo que requieren las empresas</h2>
+<div class="body stagger">
+
+<div class="col" style="width:100%;gap:24px"><p class="serif" style="font-size:36px;font-weight:700;color:#4A4F57">B = | V_R − V_LB |</p>
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:32px;flex:1"><div class="card col" style="padding:36px 36px;gap:16px"><div class="ic" style="width:108px;height:108px;border-radius:54px"><img src="img/i_clock.png" alt="" style="width:58px;height:58px"></div><p style="font-size:30px;font-weight:700;color:#00345C;margin-top:10px">B1 · Tiempo de respuesta</p><p class="serif" style="font-size:52px;font-weight:700;color:#1B2430" data-count>15,25 min</p><p style="font-size:28px;color:#4A4F57">por consulta en horario laboral; más de 23 h fuera de horario</p></div><div class="cardm col" style="padding:36px 36px;gap:16px"><div class="ic g" style="width:108px;height:108px;border-radius:54px"><img src="img/i_moon.png" alt="" style="width:58px;height:58px"></div><p style="font-size:30px;font-weight:700;color:#8DBEE8;margin-top:10px">B2 · Cobertura horaria</p><p class="serif" style="font-size:68px;font-weight:700;color:#FFFFFF" data-count>126 h</p><p style="font-size:28px;color:#C9DAE8">semanales sin atención humana (42 de 168 h)</p></div><div class="card col" style="padding:36px 36px;gap:16px"><div class="ic" style="width:108px;height:108px;border-radius:54px"><img src="img/i_reply.png" alt="" style="width:58px;height:58px"></div><p style="font-size:30px;font-weight:700;color:#00345C;margin-top:10px">B3 · Continuidad</p><p class="serif" style="font-size:52px;font-weight:700;color:#1B2430">Sin historial</p><p style="font-size:28px;color:#4A4F57">unificado entre canales en la mayoría de las empresas</p></div><div class="card col" style="padding:36px 36px;gap:16px"><div class="ic" style="width:108px;height:108px;border-radius:54px"><img src="img/i_cart.png" alt="" style="width:58px;height:58px"></div><p style="font-size:30px;font-weight:700;color:#00345C;margin-top:10px">B4 · Seguimiento</p><p class="serif" style="font-size:68px;font-weight:700;color:#1B2430" data-count>≤ 20 %</p><p style="font-size:28px;color:#4A4F57">de prospectos sin compra recontactados; sin seguimiento programado</p></div></div></div>
+</div>
+</div>
+<aside class="notes">La brecha se define como la diferencia entre el valor requerido y la línea base. B1: 15,25 minutos frente a la respuesta en el primer minuto que piden las empresas. B2, la de mayor magnitud relativa: 126 horas semanales sin atención humana. B3 y B4 no tienen valor numérico acordado: ausencia de historial unificado y de seguimiento programado. La carga operativa es el factor asociado que explica por qué el personal no puede cerrar estas brechas.</aside>
+</section>
+<section id="riesgos">
+<div class="frame" style="">
+<img class="logo" src="img/uta-logo.png" alt="Logotipo de la Universidad Técnica de Ambato">
+<p class="foot">Hamilton Jumbo · Defensa de titulación · UTA – FISEI · Carrera de Software</p>
+<p class="pg">13</p>
+<p class="kicker">RESULTADOS OE1 · DIAGNÓSTICO</p>
+<h2 class="title">Matriz de riesgos: cuatro riesgos críticos (R = P × I)</h2>
+<div class="body stagger">
+
+<div class="row" style="width:800px;gap:10px">
+<div style="width:60px;display:flex;align-items:center;justify-content:center"><p style="font-size:24px;font-weight:700;color:#4A4F57;transform:rotate(-90deg);white-space:nowrap">Probabilidad →</p></div>
+<div class="col" style="width:640px;gap:10px">
+<div style="display:grid;grid-template-columns:50px 112px 112px 112px 112px 112px;grid-template-rows:112px 112px 112px 112px 112px 40px;gap:6px"><div style="display:flex;align-items:center;justify-content:flex-end;padding-right:10px"><p class="s" style="font-size:24px">5</p></div><div class="cell" style="--i:1;background:#F7DE8A;display:flex;align-items:center;justify-content:center"></div><div class="cell" style="--i:2;background:#F2AE85;display:flex;align-items:center;justify-content:center"></div><div class="cell" style="--i:3;background:#F2AE85;display:flex;align-items:center;justify-content:center"><p style="font-size:26px;font-weight:700">R6</p></div><div class="cell" style="--i:4;background:#E46A6A;display:flex;align-items:center;justify-content:center"><p style="font-size:26px;font-weight:700">R3 R4</p></div><div class="cell" style="--i:5;background:#E46A6A;display:flex;align-items:center;justify-content:center"><p style="font-size:26px;font-weight:700">R1 R2</p></div><div style="display:flex;align-items:center;justify-content:flex-end;padding-right:10px"><p class="s" style="font-size:24px">4</p></div><div class="cell" style="--i:6;background:#BFE3C8;display:flex;align-items:center;justify-content:center"></div><div class="cell" style="--i:7;background:#F7DE8A;display:flex;align-items:center;justify-content:center"></div><div class="cell" style="--i:8;background:#F2AE85;display:flex;align-items:center;justify-content:center"><p style="font-size:26px;font-weight:700">R7</p></div><div class="cell" style="--i:9;background:#F2AE85;display:flex;align-items:center;justify-content:center"><p style="font-size:26px;font-weight:700">R5</p></div><div class="cell" style="--i:10;background:#E46A6A;display:flex;align-items:center;justify-content:center"></div><div style="display:flex;align-items:center;justify-content:flex-end;padding-right:10px"><p class="s" style="font-size:24px">3</p></div><div class="cell" style="--i:11;background:#BFE3C8;display:flex;align-items:center;justify-content:center"></div><div class="cell" style="--i:12;background:#F7DE8A;display:flex;align-items:center;justify-content:center"></div><div class="cell" style="--i:13;background:#F7DE8A;display:flex;align-items:center;justify-content:center"></div><div class="cell" style="--i:14;background:#F2AE85;display:flex;align-items:center;justify-content:center"></div><div class="cell" style="--i:15;background:#F2AE85;display:flex;align-items:center;justify-content:center"></div><div style="display:flex;align-items:center;justify-content:flex-end;padding-right:10px"><p class="s" style="font-size:24px">2</p></div><div class="cell" style="--i:16;background:#BFE3C8;display:flex;align-items:center;justify-content:center"></div><div class="cell" style="--i:17;background:#BFE3C8;display:flex;align-items:center;justify-content:center"></div><div class="cell" style="--i:18;background:#F7DE8A;display:flex;align-items:center;justify-content:center"></div><div class="cell" style="--i:19;background:#F7DE8A;display:flex;align-items:center;justify-content:center"></div><div class="cell" style="--i:20;background:#F2AE85;display:flex;align-items:center;justify-content:center"></div><div style="display:flex;align-items:center;justify-content:flex-end;padding-right:10px"><p class="s" style="font-size:24px">1</p></div><div class="cell" style="--i:21;background:#BFE3C8;display:flex;align-items:center;justify-content:center"></div><div class="cell" style="--i:22;background:#BFE3C8;display:flex;align-items:center;justify-content:center"></div><div class="cell" style="--i:23;background:#BFE3C8;display:flex;align-items:center;justify-content:center"></div><div class="cell" style="--i:24;background:#BFE3C8;display:flex;align-items:center;justify-content:center"></div><div class="cell" style="--i:25;background:#F7DE8A;display:flex;align-items:center;justify-content:center"></div><div></div><div style="display:flex;justify-content:center"><p class="s" style="font-size:24px">1</p></div><div style="display:flex;justify-content:center"><p class="s" style="font-size:24px">2</p></div><div style="display:flex;justify-content:center"><p class="s" style="font-size:24px">3</p></div><div style="display:flex;justify-content:center"><p class="s" style="font-size:24px">4</p></div><div style="display:flex;justify-content:center"><p class="s" style="font-size:24px">5</p></div></div>
+<p style="font-size:24px;font-weight:700;color:#4A4F57;text-align:center;padding-left:56px">Impacto →</p></div></div>
+<div style="flex:1"><table class="tb" style="font-size:28px"><tr class="hd"><th style="width:11%">ID</th><th style="width:60%">Riesgo</th><th style="width:12%">P×I</th><th style="width:17%">Nivel</th></tr><tr><td>R1</td><td>Demora en la primera respuesta</td><td>25</td><td style="color:#B23A3A">Crítico</td></tr><tr><td>R2</td><td>Sin atención fuera del horario</td><td>25</td><td style="color:#B23A3A">Crítico</td></tr><tr><td>R3</td><td>Falta de seguimiento</td><td>20</td><td style="color:#B23A3A">Crítico</td></tr><tr><td>R4</td><td>Sobrecarga operativa</td><td>20</td><td style="color:#B23A3A">Crítico</td></tr><tr><td>R5</td><td>Pérdida de contexto</td><td>16</td><td style="color:#B06A2A">Alto</td></tr><tr><td>R6</td><td>Respuestas repetitivas</td><td>15</td><td style="color:#B06A2A">Alto</td></tr><tr><td>R7</td><td>Sin trazabilidad del estado</td><td>12</td><td style="color:#B06A2A">Alto</td></tr></table></div>
+</div>
+</div>
+<aside class="notes">La valoración usó probabilidad e impacto de 1 a 5, asignados por el autor con criterios explícitos: probabilidad 5 cuando el 100 % del personal reportó la situación, e impacto 5 cuando el CEO la asoció con pérdida de ventas. La demora en la primera respuesta y la falta de atención fuera de horario alcanzan el máximo (25). Conclusión: una solución que solo responda mensajes no basta; debe dar disponibilidad continua, conservar contexto, registrar estados y hacer seguimiento.</aside>
+</section>
+<section id="as-is">
+<div class="frame" style="">
+<img class="logo" src="img/uta-logo.png" alt="Logotipo de la Universidad Técnica de Ambato">
+<p class="foot">Hamilton Jumbo · Defensa de titulación · UTA – FISEI · Carrera de Software</p>
+<p class="pg">14</p>
+<p class="kicker">RESULTADOS OE1 · DIAGNÓSTICO</p>
+<h2 class="title">Proceso actual (AS-IS): tres puntos críticos</h2>
+<div class="body stagger">
+
+<img src="img/bpmn-as-is.png" alt="Diagrama BPMN del proceso actual de atención (AS-IS)" style="width:1000px;height:708px;object-fit:contain">
+<div class="col" style="flex:1;gap:56px;padding-top:10px"><div class="row" style="gap:28px"><div class="num" style="width:80px;height:80px;border-radius:40px"><p style="font-size:30px">1</p></div><div class="col" style="gap:8px;flex:1"><p class="h" style="font-size:34px">Recepción → disponibilidad</p><p class="t">El canal recibe al instante, pero la respuesta espera a una persona: 16,25 min o 24 h+.</p></div></div><div class="row" style="gap:28px"><div class="num" style="width:80px;height:80px;border-radius:40px"><p style="font-size:30px">2</p></div><div class="col" style="gap:8px;flex:1"><p class="h" style="font-size:34px">Continuidad</p><p class="t">Cada mensaje obliga a revisar de nuevo la conversación; colas y datos repetidos.</p></div></div><div class="row" style="gap:28px"><div class="num" style="width:80px;height:80px;border-radius:40px"><p style="font-size:30px">3</p></div><div class="col" style="gap:8px;flex:1"><p class="h" style="font-size:34px">Después de no comprar</p><p class="t">El seguimiento depende de que alguien recuerde al prospecto: ≤ 20 %.</p></div></div></div>
+</div>
+</div>
+<aside class="notes">El modelo BPMN del escenario AS-IS involucra al prospecto, al canal y al personal. Todas las actividades de análisis, búsqueda de información, respuesta y seguimiento dependen del personal. Los tres puntos críticos coinciden con las brechas cuantificadas. Con esto se cumple el primer objetivo y se derivan los requerimientos.</aside>
+</section>
+<section id="requerimientos">
+<div class="frame" style="">
+<img class="logo" src="img/uta-logo.png" alt="Logotipo de la Universidad Técnica de Ambato">
+<p class="foot">Hamilton Jumbo · Defensa de titulación · UTA – FISEI · Carrera de Software</p>
+<p class="pg">15</p>
+<p class="kicker">RESULTADOS OE2 · DISEÑO</p>
+<h2 class="title">Las brechas se traducen en 12 RF y 10 RNF</h2>
+<div class="body stagger">
+
+<div class="col" style="width:1050px;gap:16px"><p class="h" style="font-size:34px">Requerimientos funcionales</p>
+<div style="display:grid;grid-template-columns:1fr 1fr;grid-auto-rows:89px;grid-template-rows:89px 89px 89px 89px 89px 89px;gap:19px 22px"><div class="card" style="display:flex;align-items:center;padding:0 22px"><p style="font-size:26px">RF01 Recepción de conversaciones</p></div><div class="card" style="display:flex;align-items:center;padding:0 22px"><p style="font-size:26px">RF02 Identificación del prospecto</p></div><div class="card" style="display:flex;align-items:center;padding:0 22px"><p style="font-size:26px">RF03 Atención automatizada</p></div><div class="card" style="display:flex;align-items:center;padding:0 22px"><p style="font-size:26px">RF04 Respuestas contextuales</p></div><div class="card" style="display:flex;align-items:center;padding:0 22px"><p style="font-size:26px">RF05 Conservación del contexto</p></div><div class="card" style="display:flex;align-items:center;padding:0 22px"><p style="font-size:26px">RF06 Estado del prospecto</p></div><div class="card" style="display:flex;align-items:center;padding:0 22px"><p style="font-size:26px">RF07 Seguimiento automatizado</p></div><div class="card" style="display:flex;align-items:center;padding:0 22px"><p style="font-size:26px">RF08 Registro de seguimientos</p></div><div class="card" style="display:flex;align-items:center;padding:0 22px"><p style="font-size:26px">RF09 Intervención humana</p></div><div class="card" style="display:flex;align-items:center;padding:0 22px"><p style="font-size:26px">RF10 Registro de métricas</p></div><div class="card" style="display:flex;align-items:center;padding:0 22px"><p style="font-size:26px">RF11 Gestión multicanal</p></div><div class="card" style="display:flex;align-items:center;padding:0 22px"><p style="font-size:26px">RF12 Resultado comercial</p></div></div></div>
+<div class="col" style="flex:1;gap:16px;margin-left:30px"><p class="h" style="font-size:34px">Requerimientos no funcionales</p><div class="col" style="gap:9px"><div style="background:#00345C;border:1px solid #00345C;border-radius:11px;padding:6px 22px;display:flex;align-items:center"><p style="font-size:24px;color:#FFFFFF">RNF01 Rendimiento: ≥ 90 % en &lt; 1 min</p></div><div style="background:#FFFFFF;border:1px solid #D5E0EA;border-radius:11px;padding:6px 22px;display:flex;align-items:center"><p style="font-size:24px;color:#1B2430">RNF02 Disponibilidad 24 h</p></div><div style="background:#FFFFFF;border:1px solid #D5E0EA;border-radius:11px;padding:6px 22px;display:flex;align-items:center"><p style="font-size:24px;color:#1B2430">RNF03 Trazabilidad</p></div><div style="background:#FFFFFF;border:1px solid #D5E0EA;border-radius:11px;padding:6px 22px;display:flex;align-items:center"><p style="font-size:24px;color:#1B2430">RNF04 Seguridad</p></div><div style="background:#FFFFFF;border:1px solid #D5E0EA;border-radius:11px;padding:6px 22px;display:flex;align-items:center"><p style="font-size:24px;color:#1B2430">RNF05 Privacidad</p></div><div style="background:#FFFFFF;border:1px solid #D5E0EA;border-radius:11px;padding:6px 22px;display:flex;align-items:center"><p style="font-size:24px;color:#1B2430">RNF06 Integridad del contexto</p></div><div style="background:#FFFFFF;border:1px solid #D5E0EA;border-radius:11px;padding:6px 22px;display:flex;align-items:center"><p style="font-size:24px;color:#1B2430">RNF07 Interoperabilidad</p></div><div style="background:#FFFFFF;border:1px solid #D5E0EA;border-radius:11px;padding:6px 22px;display:flex;align-items:center"><p style="font-size:24px;color:#1B2430">RNF08 Escalabilidad</p></div><div style="background:#FFFFFF;border:1px solid #D5E0EA;border-radius:11px;padding:6px 22px;display:flex;align-items:center"><p style="font-size:24px;color:#1B2430">RNF09 Consistencia</p></div><div style="background:#FFFFFF;border:1px solid #D5E0EA;border-radius:11px;padding:6px 22px;display:flex;align-items:center"><p style="font-size:24px;color:#1B2430">RNF10 Usabilidad</p></div></div></div>
+</div>
+</div>
+<aside class="notes">Cada requerimiento está respaldado por una brecha. Por ejemplo, B1 tiempo de respuesta genera RF01, RF03, RF04, RF10 y RNF01, con criterio de cumplimiento: al menos el 90 % de las primeras respuestas en menos de un minuto. La intervención humana (RF09) define tres derivaciones obligatorias: comprobantes de pago, información faltante y error de la IA. Seguridad y privacidad son transversales.</aside>
+</section>
+<section id="tecnologias">
+<div class="frame" style="">
+<img class="logo" src="img/uta-logo.png" alt="Logotipo de la Universidad Técnica de Ambato">
+<p class="foot">Hamilton Jumbo · Defensa de titulación · UTA – FISEI · Carrera de Software</p>
+<p class="pg">16</p>
+<p class="kicker">RESULTADOS OE2 · DISEÑO</p>
+<h2 class="title">Tecnologías que SEVNEL ya conoce y mantiene</h2>
+<div class="body stagger">
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;grid-template-rows:317px 317px;gap:43px 32px;width:100%"><div class="card col" style="padding:32px 36px;gap:14px"><p class="lbl">BACKEND</p><p class="hs" style="font-size:36px">NestJS 11 + TypeScript</p><p class="s">API, un módulo por componente</p></div><div class="card col" style="padding:32px 36px;gap:14px"><p class="lbl">FRONTEND</p><p class="hs" style="font-size:36px">Next.js 16 + React 19</p><p class="s">Panel web de las empresas</p></div><div class="card col" style="padding:32px 36px;gap:14px"><p class="lbl">BASE DE DATOS</p><p class="hs" style="font-size:36px">PostgreSQL 16</p><p class="s">Conversaciones, mensajes y métricas</p></div><div class="card col" style="padding:32px 36px;gap:14px"><p class="lbl">COLAS</p><p class="hs" style="font-size:36px">Redis 7 + BullMQ</p><p class="s">Mensajes en cola y seguimientos</p></div><div class="card col" style="padding:32px 36px;gap:14px"><p class="lbl">PLATAFORMA COMERCIAL</p><p class="hs" style="font-size:36px">GoHighLevel</p><p class="s">WhatsApp, FB, IG, SMS, citas</p></div><div class="card col" style="padding:32px 36px;gap:14px"><p class="lbl">INTELIGENCIA ARTIFICIAL</p><p class="hs" style="font-size:36px">OpenAI (modelos GPT)</p><p class="s">Interpretación, respuestas y herramientas</p></div><div class="card col" style="padding:32px 36px;gap:14px"><p class="lbl">CONTENEDORES</p><p class="hs" style="font-size:36px">Docker</p><p class="s">Entorno de desarrollo</p></div><div class="card col" style="padding:32px 36px;gap:14px"><p class="lbl">DESPLIEGUE</p><p class="hs" style="font-size:36px">Render + Vercel</p><p class="s">API, BD y Redis; aplicación web</p></div></div>
+</div>
+</div>
+<aside class="notes">Las tecnologías se eligieron a partir del stack que SEVNEL usa en sus proyectos, para que la empresa pueda mantener la solución: NestJS, Next.js, PostgreSQL y Docker. GoHighLevel es el CRM donde están integrados los clientes y actúa como entrada y salida de los canales. OpenAI es el único proveedor de IA que usa SEVNEL y ChatGPT es la herramienta más conocida por los usuarios.</aside>
+</section>
+<section id="arquitectura">
+<div class="frame" style="">
+<img class="logo" src="img/uta-logo.png" alt="Logotipo de la Universidad Técnica de Ambato">
+<p class="foot">Hamilton Jumbo · Defensa de titulación · UTA – FISEI · Carrera de Software</p>
+<p class="pg">17</p>
+<p class="kicker">RESULTADOS OE2 · DISEÑO</p>
+<h2 class="title">Arquitectura funcional de LeadPilot: 10 componentes</h2>
+<div class="body stagger">
+
+<img src="img/arquitectura.png" alt="Arquitectura funcional de LeadPilot" style="width:1210px;height:681px;object-fit:contain">
+<div class="col" style="flex:1;gap:22px"><div class="card col" style="padding:18px 30px;gap:6px"><p class="h" style="font-size:30px">Entrada</p><p class="s" style="font-size:24px">C01 Integración multicanal · C02 Orquestador</p></div><div class="card col" style="padding:18px 30px;gap:6px"><p class="h" style="font-size:30px">Procesamiento</p><p class="s" style="font-size:24px">C03 Contexto · C04 Configuración · C05 Agente IA</p></div><div class="card col" style="padding:18px 30px;gap:6px"><p class="h" style="font-size:30px">Negocio</p><p class="s" style="font-size:24px">C06 Acciones · C07 Seguimiento · C10 Intervención humana</p></div><div class="card col" style="padding:18px 30px;gap:6px"><p class="h" style="font-size:30px">Información</p><p class="s" style="font-size:24px">C08 Gestor de información · C09 Métricas</p></div></div>
+</div>
+</div>
+<aside class="notes">LeadPilot se instala como aplicación del Marketplace de GoHighLevel. Los mensajes llegan por webhooks y las respuestas salen por su API. Los componentes se agrupan en entrada, procesamiento conversacional, funciones de negocio e información y supervisión. La matriz de trazabilidad comprobó que cada RF y RNF tiene al menos un componente responsable.</aside>
+</section>
+<section id="agente">
+<div class="frame" style="">
+<img class="logo" src="img/uta-logo.png" alt="Logotipo de la Universidad Técnica de Ambato">
+<p class="foot">Hamilton Jumbo · Defensa de titulación · UTA – FISEI · Carrera de Software</p>
+<p class="pg">18</p>
+<p class="kicker">RESULTADOS OE2 · DISEÑO</p>
+<h2 class="title">Agente de IA: contexto controlado y derivación</h2>
+<div class="body stagger">
+
+<div class="col" style="width:890px;gap:22px"><p class="h" style="font-size:34px">El agente recibe en cada turno</p>
+<div style="display:grid;grid-template-columns:1fr 1fr;grid-template-rows:115px 115px 115px;gap:22px"><div class="card row" style="align-items:center;gap:18px;padding:0 22px"><div class="num" style="width:66px;height:66px;border-radius:33px"><p style="font-size:26px">1</p></div><p style="font-size:26px;font-weight:700">Instrucciones del sistema</p></div><div class="card row" style="align-items:center;gap:18px;padding:0 22px"><div class="num" style="width:66px;height:66px;border-radius:33px"><p style="font-size:26px">2</p></div><p style="font-size:26px;font-weight:700">Información de la empresa</p></div><div class="card row" style="align-items:center;gap:18px;padding:0 22px"><div class="num" style="width:66px;height:66px;border-radius:33px"><p style="font-size:26px">3</p></div><p style="font-size:26px;font-weight:700">Historial (últimos 20 mensajes)</p></div><div class="card row" style="align-items:center;gap:18px;padding:0 22px"><div class="num" style="width:66px;height:66px;border-radius:33px"><p style="font-size:26px">4</p></div><p style="font-size:26px;font-weight:700">Estado del prospecto</p></div><div class="card row" style="align-items:center;gap:18px;padding:0 22px"><div class="num" style="width:66px;height:66px;border-radius:33px"><p style="font-size:26px">5</p></div><p style="font-size:26px;font-weight:700">Reglas de negocio</p></div><div class="card row" style="align-items:center;gap:18px;padding:0 22px"><div class="num" style="width:66px;height:66px;border-radius:33px"><p style="font-size:26px">6</p></div><p style="font-size:26px;font-weight:700">Herramientas disponibles</p></div></div>
+<p class="s" style="font-style:italic">Modelo gpt-6-luna · salida JSON · espera de 5–10 s para un ritmo humanizado · respuestas en 1–3 mensajes</p></div>
+<div class="cardm col" style="flex:1;padding:36px 44px;gap:34px">
+<div class="row" style="gap:24px;align-items:center"><img src="img/i_robot.png" alt="" style="width:86px;height:86px;object-fit:contain"><p class="w" style="font-size:36px;font-weight:700">Pasa a un asesor humano cuando…</p></div><div class="col" style="gap:8px"><p style="font-size:32px;font-weight:700;color:#8DBEE8">Llega un comprobante de pago</p><p class="w" style="font-size:28px">La IA no puede validar el depósito</p></div><div class="col" style="gap:8px"><p style="font-size:32px;font-weight:700;color:#8DBEE8">Falta la información</p><p class="w" style="font-size:28px">«La IA no me debe inventar un precio»</p></div><div class="col" style="gap:8px"><p style="font-size:32px;font-weight:700;color:#8DBEE8">El cliente lo pide o hay error</p><p class="w" style="font-size:28px">Se pausa el bot y se avisa al asesor</p></div></div>
+</div>
+</div>
+<aside class="notes">A diferencia de un chatbot de respuestas predefinidas, el agente recibe un contexto controlado con seis elementos, lo que evita que dependa solo del conocimiento general del modelo. La aplicación conserva el control sobre las acciones: el modelo propone, la aplicación ejecuta. Las reglas de derivación vienen directamente de la entrevista al CEO: pagos, información faltante y error.</aside>
+</section>
+<section id="scrum-xp">
+<div class="frame" style="">
+<img class="logo" src="img/uta-logo.png" alt="Logotipo de la Universidad Técnica de Ambato">
+<p class="foot">Hamilton Jumbo · Defensa de titulación · UTA – FISEI · Carrera de Software</p>
+<p class="pg">19</p>
+<p class="kicker">METODOLOGÍA DE DESARROLLO</p>
+<h2 class="title">Enfoque híbrido Scrum–XP</h2>
+<div class="body stagger">
+
+<div class="col" style="width:1160px;gap:36px">
+<div class="row" style="gap:36px;height:432px"><div class="card col" style="flex:1;padding:24px 36px;gap:16px"><p class="hs">Scrum · gestión</p><ul class="b" style=""><li>Sprints de 1 semana</li><li>Product y Sprint Backlog</li><li>Definición de terminado</li><li>Revisión y retrospectiva</li></ul></div><div class="card col" style="flex:1;padding:24px 36px;gap:16px"><p class="hs">XP · construcción</p><ul class="b" style=""><li>Historias de usuario</li><li>Diseño simple</li><li>Programación asistida por IA con revisión humana</li><li>Pruebas e integración frecuente</li></ul></div></div>
+<table class="tb" style="font-size:26px"><tr class="hd"><th style="width:38%">Integrante</th><th style="width:31%">Scrum</th><th style="width:31%">XP</th></tr><tr><td>CEO de SEVNEL</td><td>Product Owner</td><td>Cliente</td></tr><tr><td>Tutor</td><td>Scrum Master</td><td>Coach</td></tr><tr><td>Autor</td><td>Developer</td><td>Programador</td></tr><tr><td>Tester</td><td>Developer</td><td>Tester</td></tr></table></div>
+<div class="cardm col" style="flex:1;padding:30px 36px;gap:20px"><p style="font-size:36px;font-weight:700;color:#8DBEE8">¿Por qué este enfoque?</p>
+<ul class="b" style="color:#FFFFFF"><li>Scrum no prescribe prácticas de ingeniería; XP sí</li><li>Equipo reducido que depende de servicios externos</li><li>Cliente presente: reunión diaria con el CEO</li><li>Cambios pequeños validados con datos reales</li></ul></div>
+</div>
+</div>
+<aside class="notes">Scrum organizó la gestión y XP guio la construcción. Se eligió porque Scrum es deliberadamente incompleto en prácticas de ingeniería y XP las aporta; además, el equipo era reducido, dependía de GoHighLevel y OpenAI, y el cliente estaba presente todos los días. El CEO fue Product Owner y cliente; el tutor, Scrum Master; el autor, desarrollador; y un tester validó los criterios de aceptación.</aside>
+</section>
+<section id="sprints">
+<div class="frame" style="">
+<img class="logo" src="img/uta-logo.png" alt="Logotipo de la Universidad Técnica de Ambato">
+<p class="foot">Hamilton Jumbo · Defensa de titulación · UTA – FISEI · Carrera de Software</p>
+<p class="pg">20</p>
+<p class="kicker">RESULTADOS OE3 · IMPLEMENTACIÓN</p>
+<h2 class="title">Sprint 0 + cuatro sprints de una semana</h2>
+<div class="body stagger">
+
+<div class="col" style="width:100%;gap:30px">
+<div style="position:relative;height:290px">
+<svg class="lines" aria-hidden="true" style="position:absolute;left:0;top:0;overflow:visible" width="1" height="1"><line x1="40" y1="40" x2="1700" y2="40" stroke="#D5E0EA" stroke-width="4" stroke-linecap="round" pathLength="400"/></svg>
+<div style="position:absolute;left:0;top:0;width:1748px;display:grid;grid-template-columns:1fr 1fr 1fr 1fr 1fr;gap:30px"><div class="col" style="gap:8px"><div class="num g" style="width:80px;height:80px;border-radius:40px"><p style="font-size:30px">0</p></div><p style="font-size:30px;font-weight:700;color:#00345C;margin-top:14px">Sprint 0</p><p style="font-size:24px;font-weight:700;color:#2F6FA8">24 ago – 9 oct</p><p class="s" style="font-size:24px">Diagnóstico, requerimientos, arquitectura, backlog</p></div><div class="col" style="gap:8px"><div class="num" style="width:80px;height:80px;border-radius:40px"><p style="font-size:30px">1</p></div><p style="font-size:30px;font-weight:700;color:#00345C;margin-top:14px">Sprint 1</p><p style="font-size:24px;font-weight:700;color:#2F6FA8">12 – 16 oct</p><p class="s" style="font-size:24px">Base, integración GoHighLevel y agente de IA</p></div><div class="col" style="gap:8px"><div class="num" style="width:80px;height:80px;border-radius:40px"><p style="font-size:30px">2</p></div><p style="font-size:30px;font-weight:700;color:#00345C;margin-top:14px">Sprint 2</p><p style="font-size:24px;font-weight:700;color:#2F6FA8">19 – 23 oct</p><p class="s" style="font-size:24px">Control humano, métricas, despliegue, acciones</p></div><div class="col" style="gap:8px"><div class="num" style="width:80px;height:80px;border-radius:40px"><p style="font-size:30px">3</p></div><p style="font-size:30px;font-weight:700;color:#00345C;margin-top:14px">Sprint 3</p><p style="font-size:24px;font-weight:700;color:#2F6FA8">26 – 30 oct</p><p class="s" style="font-size:24px">Citas, avisos a asesores, inicio de evaluación</p></div><div class="col" style="gap:8px"><div class="num" style="width:80px;height:80px;border-radius:40px"><p style="font-size:30px">4</p></div><p style="font-size:30px;font-weight:700;color:#00345C;margin-top:14px">Sprint 4</p><p style="font-size:24px;font-weight:700;color:#2F6FA8">2 – 8 nov</p><p class="s" style="font-size:24px">Operación del piloto y cierre de datos</p></div></div></div>
+<div class="col" style="flex:1"><p class="chart-t">Velocidad (puntos de historia terminados)</p><div class="vbars" style="height:270px"><div class="vb" style="--i:1"><p class="val">77</p><div class="bar" style="width:140px;height:177px"></div></div><div class="vb" style="--i:2"><p class="val">84</p><div class="bar" style="width:140px;height:193px"></div></div><div class="vb" style="--i:3"><p class="val">16</p><div class="bar" style="width:140px;height:36px"></div></div><div class="vb" style="--i:4"><p class="val">3</p><div class="bar" style="width:140px;height:6px"></div></div></div><div class="vlabs"><p style="width:180px">Sprint 1</p><p style="width:180px">Sprint 2</p><p style="width:180px">Sprint 3</p><p style="width:180px">Sprint 4</p></div></div></div>
+</div>
+</div>
+<aside class="notes">Tras el Sprint 0 de preparación, se ejecutaron cuatro sprints de una semana, cada uno con planificación, desarrollo, revisión con el Product Owner y retrospectiva. En el Sprint 2 el equipo terminó antes y, con aprobación del Product Owner, adelantó trabajo de los sprints 3 y 4; por eso la velocidad baja al final. El Sprint 4 se extendió al 8 de noviembre para la extracción final de los indicadores.</aside>
+</section>
+<section id="pruebas">
+<div class="frame" style="">
+<img class="logo" src="img/uta-logo.png" alt="Logotipo de la Universidad Técnica de Ambato">
+<p class="foot">Hamilton Jumbo · Defensa de titulación · UTA – FISEI · Carrera de Software</p>
+<p class="pg">21</p>
+<p class="kicker">RESULTADOS OE3 · IMPLEMENTACIÓN</p>
+<h2 class="title">478 pruebas automatizadas, 100 % aprobadas</h2>
+<div class="body stagger">
+
+<div class="cardm col" style="width:562px;padding:36px 36px;gap:22px"><p class="serif w" style="font-size:132px;font-weight:700;line-height:1" data-count>478</p><p class="pk" style="font-size:30px">pruebas en 55 suites con Jest</p><div class="col" style="gap:26px;margin-top:20px"><div class="row" style="gap:18px;align-items:center"><p class="serif" style="font-size:44px;font-weight:700;color:#8DBEE8;width:210px;flex:none">406</p><p class="w" style="font-size:26px">unitarias</p></div><div class="row" style="gap:18px;align-items:center"><p class="serif" style="font-size:44px;font-weight:700;color:#8DBEE8;width:210px;flex:none">72</p><p class="w" style="font-size:26px">de integración con PostgreSQL</p></div><div class="row" style="gap:18px;align-items:center"><p class="serif" style="font-size:44px;font-weight:700;color:#8DBEE8;width:210px;flex:none">67,57 %</p><p class="w" style="font-size:26px">cobertura de líneas (unitarias)</p></div></div></div>
+<div class="col" style="flex:1"><p class="chart-t">Pruebas por módulo (unitarias + integración, principales)</p><div class="col" style="gap:18px;flex:1;justify-content:space-around"><div class="hbar" style="--i:1"><p class="lab" style="width:340px">C04 Base de conocimientos</p><div class="trk"><div class="bar" style="width:79.2%"></div><p class="val">54</p></div></div><div class="hbar" style="--i:2"><p class="lab" style="width:340px">C01 GoHighLevel</p><div class="trk"><div class="bar" style="width:74.8%"></div><p class="val">51</p></div></div><div class="hbar" style="--i:3"><p class="lab" style="width:340px">C07 Seguimiento</p><div class="trk"><div class="bar" style="width:63.1%"></div><p class="val">43</p></div></div><div class="hbar" style="--i:4"><p class="lab" style="width:340px">C09 Métricas</p><div class="trk"><div class="bar" style="width:55.7%"></div><p class="val">38</p></div></div><div class="hbar" style="--i:5"><p class="lab" style="width:340px">C02/C08 Conversaciones</p><div class="trk"><div class="bar" style="width:54.3%"></div><p class="val">37</p></div></div><div class="hbar" style="--i:6"><p class="lab" style="width:340px">C04 Inventario</p><div class="trk"><div class="bar" style="width:52.8%"></div><p class="val">36</p></div></div><div class="hbar" style="--i:7"><p class="lab" style="width:340px">C10 Control humano</p><div class="trk"><div class="bar" style="width:48.4%"></div><p class="val">33</p></div></div><div class="hbar" style="--i:8"><p class="lab" style="width:340px">C06 Acciones</p><div class="trk"><div class="bar" style="width:42.5%"></div><p class="val">29</p></div></div></div></div>
+</div>
+</div>
+<aside class="notes">La ejecución final del 8 de noviembre aprobó las 478 pruebas: 406 unitarias y 72 de integración contra una base PostgreSQL temporal. Los módulos con más pruebas son los de mayor riesgo para la investigación: la integración con GoHighLevel, la base de conocimientos y el cálculo de indicadores. El frontend se verificó de forma manual; incorporar pruebas automatizadas allí es una recomendación.</aside>
+</section>
+<section id="interfaces-1">
+<div class="frame" style="">
+<img class="logo" src="img/uta-logo.png" alt="Logotipo de la Universidad Técnica de Ambato">
+<p class="foot">Hamilton Jumbo · Defensa de titulación · UTA – FISEI · Carrera de Software</p>
+<p class="pg">22</p>
+<p class="kicker">RESULTADOS OE3 · IMPLEMENTACIÓN</p>
+<h2 class="title">LeadPilot: conversaciones y editor del agente</h2>
+<div class="body stagger">
+
+<div class="col" style="flex:1;gap:24px"><img src="img/conversaciones.png" alt="Pantalla de conversaciones de LeadPilot" style="width:864px;height:500px;object-fit:contain;background:#EEF3F7;border-radius:12px"><p class="s" style="font-size:28px">Conversaciones multicanal por empresa, con autor de cada mensaje (IA o humano)</p></div>
+<div class="col" style="flex:1;gap:24px"><img src="img/editor-agente.png" alt="Editor del agente con chat de prueba" style="width:864px;height:500px;object-fit:contain;background:#EEF3F7;border-radius:12px"><p class="s" style="font-size:28px">Editor del agente: prompt, canales, seguimientos, base de conocimientos, inventario y chat de prueba</p></div>
+</div>
+</div>
+<aside class="notes">Estas son pantallas reales de la aplicación desplegada. A la izquierda, el listado de conversaciones; a la derecha, el editor del agente con su chat de prueba. [Puede reemplazar estas capturas por otras más recientes si lo desea.]</aside>
+</section>
+<section id="interfaces-2">
+<div class="frame" style="">
+<img class="logo" src="img/uta-logo.png" alt="Logotipo de la Universidad Técnica de Ambato">
+<p class="foot">Hamilton Jumbo · Defensa de titulación · UTA – FISEI · Carrera de Software</p>
+<p class="pg">23</p>
+<p class="kicker">RESULTADOS OE3 · IMPLEMENTACIÓN</p>
+<h2 class="title">LeadPilot: dashboard de indicadores y control humano</h2>
+<div class="body stagger">
+
+<img src="img/dashboard.png" alt="Dashboard de indicadores y detalle de conversación" style="width:1094px;height:592px;object-fit:contain">
+<div class="card col" style="flex:1;padding:30px 36px;gap:20px;height:590px"><p class="h" style="font-size:34px">En la misma interfaz</p>
+<ul class="b" style=""><li>Indicadores Tr, Ch, S y Cv en tiempo real</li><li>Pausar o reanudar el bot</li><li>Marcar venta o pérdida</li><li>Excluir conversaciones de prueba</li><li>Costo de OpenAI por conversación</li></ul></div>
+</div>
+</div>
+<aside class="notes">El dashboard calcula los cuatro indicadores directamente desde los registros de la aplicación. En el detalle de la conversación el asesor puede pausar el bot, marcar una venta y ver el costo de IA. Esta captura corresponde a la Empresa D.</aside>
+</section>
+<section id="demo">
+<div class="frame" style="">
+<img class="logo" src="img/uta-logo.png" alt="Logotipo de la Universidad Técnica de Ambato">
+<p class="foot">Hamilton Jumbo · Defensa de titulación · UTA – FISEI · Carrera de Software</p>
+<p class="pg">24</p>
+<p class="kicker">DEMOSTRACIÓN</p>
+<h2 class="title">Demostración de LeadPilot</h2>
+<div class="body stagger">
+
+<div class="col" style="width:100%;background:#F6F9FB;border:3px dashed #2F6FA8;border-radius:17px;align-items:center;justify-content:center;gap:30px">
+<img src="img/n_play.png" alt="" style="width:144px;height:144px;object-fit:contain">
+<p style="font-size:32px;color:#6B6B6B;font-style:italic;text-align:center;width:1300px">Espacio para pegar el video de la demo, capturas o el enlace a la presentación interactiva en HTML</p></div>
+</div>
+</div>
+<aside class="notes">Demostración en vivo o en video (2–3 minutos): un prospecto escribe por el canal, el agente responde, consulta el inventario, se programa un seguimiento y el dashboard actualiza los indicadores. Para insertar el video: Insertar &gt; Video &gt; Este dispositivo, y ajústelo dentro del recuadro; luego elimine el recuadro punteado.</aside>
+</section>
+<section id="resultados">
+<div class="frame" style="">
+<img class="logo" src="img/uta-logo.png" alt="Logotipo de la Universidad Técnica de Ambato">
+<p class="foot">Hamilton Jumbo · Defensa de titulación · UTA – FISEI · Carrera de Software</p>
+<p class="pg">25</p>
+<p class="kicker">RESULTADOS OE3 · EVALUACIÓN</p>
+<h2 class="title">Piloto: 9 327 prospectos, 4 empresas, 10,5 días</h2>
+<div class="body stagger">
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:32px;width:100%"><div class="cardw col" style="padding:28px 36px;gap:8px"><div class="ic" style="width:100px;height:100px;border-radius:50px"><img src="img/i_clock.png" alt="" style="width:52px;height:52px"></div><p style="font-size:30px;font-weight:700;color:#00345C;margin-top:12px;height:80px">Tiempo de primera respuesta</p>
+<p style="font-size:24px;font-weight:700;color:#6B6B6B;margin-top:10px">Manual (estimado)</p><p class="serif" style="font-size:44px;color:#4A4F57">16,25 min</p>
+<p style="font-size:24px;font-weight:700;color:#2F6FA8;margin-top:14px">Piloto (medido)</p><p class="serif" style="font-size:76px;font-weight:700;color:#00345C;line-height:1.1" data-count>35,1 s</p>
+<p class="s">mediana · 96,9 % en menos de 1 min</p></div><div class="cardw col" style="padding:28px 36px;gap:8px"><div class="ic" style="width:100px;height:100px;border-radius:50px"><img src="img/i_moon.png" alt="" style="width:52px;height:52px"></div><p style="font-size:30px;font-weight:700;color:#00345C;margin-top:12px;height:80px">Cobertura fuera de horario</p>
+<p style="font-size:24px;font-weight:700;color:#6B6B6B;margin-top:10px">Manual (estimado)</p><p class="serif" style="font-size:44px;color:#4A4F57">24 h o más</p>
+<p style="font-size:24px;font-weight:700;color:#2F6FA8;margin-top:14px">Piloto (medido)</p><p class="serif" style="font-size:76px;font-weight:700;color:#00345C;line-height:1.1" data-count>98,7 %</p>
+<p class="s">turnos fuera de horario atendidos antes de la apertura</p></div><div class="cardw col" style="padding:28px 36px;gap:8px"><div class="ic" style="width:100px;height:100px;border-radius:50px"><img src="img/i_reply.png" alt="" style="width:52px;height:52px"></div><p style="font-size:30px;font-weight:700;color:#00345C;margin-top:12px;height:80px">Seguimiento a prospectos sin compra</p>
+<p style="font-size:24px;font-weight:700;color:#6B6B6B;margin-top:10px">Manual (estimado)</p><p class="serif" style="font-size:44px;color:#4A4F57">10 %</p>
+<p style="font-size:24px;font-weight:700;color:#2F6FA8;margin-top:14px">Piloto (medido)</p><p class="serif" style="font-size:76px;font-weight:700;color:#00345C;line-height:1.1" data-count>72,5 %</p>
+<p class="s">recibió al menos un recontacto (1,66 en promedio)</p></div><div class="cardw col" style="padding:28px 36px;gap:8px"><div class="ic" style="width:100px;height:100px;border-radius:50px"><img src="img/i_cart.png" alt="" style="width:52px;height:52px"></div><p style="font-size:30px;font-weight:700;color:#00345C;margin-top:12px;height:80px">Conversión en ventas</p>
+<p style="font-size:24px;font-weight:700;color:#6B6B6B;margin-top:10px">Manual (estimado)</p><p class="serif" style="font-size:44px;color:#4A4F57">8,1 %</p>
+<p style="font-size:24px;font-weight:700;color:#2F6FA8;margin-top:14px">Piloto (medido)</p><p class="serif" style="font-size:76px;font-weight:700;color:#1B2430;line-height:1.1" data-count>0,6 %</p>
+<p class="s">58 ventas registradas · comparación pendiente</p></div></div>
+</div>
+</div>
+<aside class="notes">Estos son los resultados del tercer objetivo. El piloto reunió 9 327 prospectos, 38 018 mensajes de prospectos y 49 571 de las empresas. Importante: los valores manuales son estimaciones del personal y los del piloto son registros de la aplicación; por eso se presentan lado a lado sin calcular una diferencia atribuida a la aplicación. La mediana de primera respuesta fue 35,1 s y el 96,9 % se envió en menos de un minuto, cumpliendo el RNF01. El 98,7 % de los turnos fuera de horario fue atendido antes de la siguiente apertura. El recontacto alcanzó el 72,5 %. La conversión (0,6 %) no puede compararse: la mayoría de ventas se cierra en el local y la ventana de observación seguía abierta.</aside>
+</section>
+<section id="por-empresa">
+<div class="frame" style="">
+<img class="logo" src="img/uta-logo.png" alt="Logotipo de la Universidad Técnica de Ambato">
+<p class="foot">Hamilton Jumbo · Defensa de titulación · UTA – FISEI · Carrera de Software</p>
+<p class="pg">26</p>
+<p class="kicker">RESULTADOS OE3 · EVALUACIÓN</p>
+<h2 class="title">Resultados por empresa y distribución horaria</h2>
+<div class="body stagger">
+
+<div class="col" style="width:950px;gap:24px"><table class="tb" style="font-size:26px"><tr class="hd"><th style="width:36%">Indicador</th><th style="width:16%">A</th><th style="width:16%">B</th><th style="width:16%">C</th><th style="width:16%">D</th></tr><tr><td>Conversaciones</td><td>8 873</td><td>297</td><td>160</td><td>7</td></tr><tr><td>Tr mediana (s)</td><td>35,2</td><td>19,3</td><td>5,7</td><td>10,7</td></tr><tr><td>Respuestas &lt; 1 min</td><td>97,1 %</td><td>93,2 %</td><td>95,2 %</td><td>100 %</td></tr><tr><td>Ch fuera de horario</td><td>99,1 %</td><td>84,9 %</td><td>91,8 %</td><td>97,8 %</td></tr><tr><td>S recontacto</td><td>74,8 %</td><td>6,4 %</td><td>65,6 %</td><td>85,7 %</td></tr><tr><td>Ventas</td><td>58</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Citas creadas</td><td>122</td><td>4</td><td>8</td><td>0</td></tr></table>
+<p class="s" style="font-style:italic">La Empresa A concentra el 95 % de las conversaciones; D operó menos de un día.</p></div>
+<div class="col" style="flex:1;gap:20px"><div class="col"><p class="chart-t">Mensajes de prospectos por franja (38 018)</p><div class="vbars" style="height:420px"><div class="vb" style="--i:1"><p class="val">3,4 %</p><div class="bar" style="width:70px;height:43px"></div></div><div class="vb" style="--i:2"><p class="val">5,2 %</p><div class="bar" style="width:70px;height:65px"></div></div><div class="vb" style="--i:3"><p class="val">21,6 %</p><div class="bar" style="width:70px;height:273px"></div></div><div class="vb" style="--i:4"><p class="val">25,8 %</p><div class="bar" style="width:70px;height:326px"></div></div><div class="vb" style="--i:5"><p class="val">25,0 %</p><div class="bar" style="width:70px;height:316px"></div></div><div class="vb" style="--i:6"><p class="val">19,0 %</p><div class="bar" style="width:70px;height:240px"></div></div></div><div class="vlabs"><p style="width:110px">00–04</p><p style="width:110px">04–08</p><p style="width:110px">08–12</p><p style="width:110px">12–16</p><p style="width:110px">16–20</p><p style="width:110px">20–24</p></div></div>
+<div class="cardm" style="padding:30px 36px;margin-top:auto"><p class="w" style="font-size:30px;font-weight:700">56 % de los turnos ocurrió fuera del horario laboral</p></div></div>
+</div>
+</div>
+<aside class="notes">El desglose muestra que los consolidados reflejan sobre todo a la Empresa A. Sin la Empresa A, las respuestas en menos de un minuto se mantienen sobre el 90 % (93,9 %), pero la cobertura baja a 89,9 % y el seguimiento a 28 %. La hora pico real fue de 12:00 a 16:00, no de 20:00 a 24:00 como percibía el CEO: muestra el valor de contrastar la entrevista con registros. Aun así, el 56 % de los turnos ocurrió fuera del horario laboral.</aside>
+</section>
+<section id="discusion">
+<div class="frame" style="">
+<img class="logo" src="img/uta-logo.png" alt="Logotipo de la Universidad Técnica de Ambato">
+<p class="foot">Hamilton Jumbo · Defensa de titulación · UTA – FISEI · Carrera de Software</p>
+<p class="pg">27</p>
+<p class="kicker">DISCUSIÓN</p>
+<h2 class="title">Discusión y limitaciones de la evaluación</h2>
+<div class="body stagger">
+
+<div class="col" style="width:806px;gap:22px"><p class="h" style="font-size:34px">Frente a la literatura</p><div class="card row" style="align-items:center;gap:20px;padding:0 36px;height:187px"><p class="big" style="font-size:44px;width:210px;flex:none">35,1 s</p><p class="t" style="font-size:26px">vs. 42 h promedio (Oldroyd, 2011) y 3,4 s de un chatbot AIML (2018)</p></div><div class="card row" style="align-items:center;gap:20px;padding:0 36px;height:187px"><p class="big" style="font-size:44px;width:210px;flex:none">56 %</p><p class="t" style="font-size:26px">de turnos fuera de horario confirma la disponibilidad 24/7 como diferenciador</p></div><div class="card row" style="align-items:center;gap:20px;padding:0 36px;height:187px"><p class="big" style="font-size:44px;width:210px;flex:none">Calidad</p><p class="t" style="font-size:26px">la disponibilidad sola no garantiza ventas: importan la calidad y la resolución (Rita, 2026)</p></div></div>
+<div class="col" style="flex:1;gap:36px;margin-left:40px"><p class="h" style="font-size:34px">Limitaciones</p><div class="row" style="gap:28px"><div class="num g" style="width:72px;height:72px;border-radius:36px"><p style="font-size:30px">1</p></div><div class="col" style="gap:6px;flex:1"><p style="font-size:30px;font-weight:700">Fuentes distintas</p><p class="s">Manual estimado vs. automatizado medido: no permite atribuir causalidad</p></div></div><div class="row" style="gap:28px"><div class="num g" style="width:72px;height:72px;border-radius:36px"><p style="font-size:30px">2</p></div><div class="col" style="gap:6px;flex:1"><p style="font-size:30px;font-weight:700">Período corto</p><p class="s">10,5 días en A, B y C; menos de un día en D</p></div></div><div class="row" style="gap:28px"><div class="num g" style="width:72px;height:72px;border-radius:36px"><p style="font-size:30px">3</p></div><div class="col" style="gap:6px;flex:1"><p style="font-size:30px;font-weight:700">Concentración</p><p class="s">Empresa A = 95 % de conversaciones; horario de B asignado por defecto</p></div></div><div class="row" style="gap:28px"><div class="num g" style="width:72px;height:72px;border-radius:36px"><p style="font-size:30px">4</p></div><div class="col" style="gap:6px;flex:1"><p style="font-size:30px;font-weight:700">Sin derivaciones</p><p class="s">Cero eventos: el control humano no se evaluó con casos reales</p></div></div></div>
+</div>
+</div>
+<aside class="notes">Los resultados son coherentes con la literatura sobre velocidad y disponibilidad, aunque la mediana es mayor que la de un chatbot de reglas porque se configuró una espera de 5 a 10 segundos para humanizar las respuestas. Reconozco cuatro limitaciones: fuentes de distinta naturaleza, período corto, concentración en la Empresa A y ausencia de derivaciones reales.</aside>
+</section>
+<section id="conclusiones">
+<div class="frame" style="">
+<img class="logo" src="img/uta-logo.png" alt="Logotipo de la Universidad Técnica de Ambato">
+<p class="foot">Hamilton Jumbo · Defensa de titulación · UTA – FISEI · Carrera de Software</p>
+<p class="pg">28</p>
+<p class="kicker">CONCLUSIONES</p>
+<h2 class="title">Conclusiones alineadas con los objetivos</h2>
+<div class="body stagger">
+
+<div class="col" style="width:100%;gap:21px"><div class="card row" style="align-items:center;gap:40px;padding:0 40px;height:166px"><div class="num" style="width:108px;height:108px;border-radius:54px"><p style="font-size:28px">OE1</p></div><p class="t" style="font-size:30px">La atención manual dependía del personal: 16,25 min de primera respuesta, 126 h semanales sin atención y como máximo 20 % de seguimiento. Cuatro riesgos críticos.</p></div><div class="card row" style="align-items:center;gap:40px;padding:0 40px;height:166px"><div class="num" style="width:108px;height:108px;border-radius:54px"><p style="font-size:28px">OE2</p></div><p class="t" style="font-size:30px">12 RF y 10 RNF cubiertos por 10 componentes, con flujo común para WhatsApp, Facebook, Instagram y SMS a través de GoHighLevel.</p></div><div class="card row" style="align-items:center;gap:40px;padding:0 40px;height:166px"><div class="num" style="width:108px;height:108px;border-radius:54px"><p style="font-size:28px">OE3</p></div><p class="t" style="font-size:30px">LeadPilot se implementó con Scrum–XP y 478 pruebas aprobadas. Primera respuesta: 16,25 min estimados frente a 35,1 s medidos; fuera de horario: 24 h o más frente a 98,7 % atendido; seguimiento: 10 % frente a 72,5 %.</p></div>
+<div class="cardm" style="padding:30px 44px;margin-top:auto"><p class="w" style="font-size:30px;font-weight:700">Por primera vez, las empresas participantes cuentan con indicadores medidos de su atención. Se implementó la aplicación y su evaluación comparativa se cumplió parcialmente.</p></div></div>
+</div>
+</div>
+<aside class="notes">Primero: el diagnóstico demostró que la atención dependía de la disponibilidad humana, con cuatro brechas y cuatro riesgos críticos. Segundo: la arquitectura transformó esas brechas en requerimientos cubiertos por diez componentes. Tercero: la aplicación se implementó y operó con cuatro empresas reales; frente a la línea base estimada, la primera respuesta se midió en 35,1 s, el 98,7 % de los turnos fuera de horario fue atendido y el 72,5 % de los prospectos sin compra recibió recontacto. En conjunto, permitió medir por primera vez los indicadores; la evaluación comparativa se cumplió parcialmente porque la conversión no pudo compararse y el período fue corto.</aside>
+</section>
+<section id="recomendaciones">
+<div class="frame" style="">
+<img class="logo" src="img/uta-logo.png" alt="Logotipo de la Universidad Técnica de Ambato">
+<p class="foot">Hamilton Jumbo · Defensa de titulación · UTA – FISEI · Carrera de Software</p>
+<p class="pg">29</p>
+<p class="kicker">RECOMENDACIONES</p>
+<h2 class="title">Recomendaciones y trabajo futuro</h2>
+<div class="body stagger">
+<div style="display:grid;grid-template-columns:1fr 1fr;grid-template-rows:216px 216px 216px;gap:24px 27px;width:100%"><div class="card row" style="align-items:center;gap:32px;padding:0 36px"><div class="num g" style="width:86px;height:86px;border-radius:43px"><p style="font-size:30px">1</p></div><div class="col" style="gap:8px;flex:1"><p class="h" style="font-size:34px">Medir la línea base</p><p class="s" style="font-size:28px">Conectar los canales antes de activar la IA para registrar el escenario manual</p></div></div><div class="card row" style="align-items:center;gap:32px;padding:0 36px"><div class="num g" style="width:86px;height:86px;border-radius:43px"><p style="font-size:30px">2</p></div><div class="col" style="gap:8px;flex:1"><p class="h" style="font-size:34px">Verificar en operación</p><p class="s" style="font-size:28px">Respuestas por WhatsApp, Facebook e Instagram, citas, derivación y ventas presenciales</p></div></div><div class="card row" style="align-items:center;gap:32px;padding:0 36px"><div class="num g" style="width:86px;height:86px;border-radius:43px"><p style="font-size:30px">3</p></div><div class="col" style="gap:8px;flex:1"><p class="h" style="font-size:34px">Extender el período</p><p class="s" style="font-size:28px">Obtener valores representativos de todas las empresas</p></div></div><div class="card row" style="align-items:center;gap:32px;padding:0 36px"><div class="num g" style="width:86px;height:86px;border-radius:43px"><p style="font-size:30px">4</p></div><div class="col" style="gap:8px;flex:1"><p class="h" style="font-size:34px">Fortalecer la seguridad</p><p class="s" style="font-size:28px">Cookie protegida, dependencias actualizadas, pruebas de frontend y LOPDP</p></div></div><div class="card row" style="align-items:center;gap:32px;padding:0 36px"><div class="num g" style="width:86px;height:86px;border-radius:43px"><p style="font-size:30px">5</p></div><div class="col" style="gap:8px;flex:1"><p class="h" style="font-size:34px">Replicar la metodología</p><p class="s" style="font-size:28px">Clínicas, educación, turismo, inmobiliarias y cooperativas</p></div></div><div class="card row" style="align-items:center;gap:32px;padding:0 36px"><div class="num g" style="width:86px;height:86px;border-radius:43px"><p style="font-size:30px">6</p></div><div class="col" style="gap:8px;flex:1"><p class="h" style="font-size:34px">Adaptar indicadores</p><p class="s" style="font-size:28px">Conservar Tr y Ch; cambiar S y Cv por citas, matrículas o reservas</p></div></div></div>
+</div>
+</div>
+<aside class="notes">Recomiendo registrar una línea base medida, verificar en operación real las funciones que no se comprobaron en el piloto, extender el período, fortalecer la seguridad conforme a la normativa ecuatoriana de protección de datos personales y replicar la metodología en otros sectores, adaptando los indicadores.</aside>
+</section>
+<section id="gracias" data-transition="fade">
+<div class="frame dark" style="align-items:center;justify-content:center;gap:20px">
+<div style="width:620px;height:270px;border-radius:24px;background:#FFFFFF;display:flex;align-items:center;justify-content:center"><img src="img/uta-logo.png" alt="Logotipo de la Universidad Técnica de Ambato" style="width:560px;height:224px;object-fit:contain"></div>
+<h1 class="serif w" style="font-size:80px;font-weight:700;margin-top:50px;text-align:center">¡Gracias por su atención!</h1>
+<p style="font-size:40px;color:#8DBEE8;text-align:center">Preguntas y observaciones del tribunal</p>
+<p class="pk" style="font-size:28px;text-align:center;margin-top:60px">Hamilton Steven Jumbo Jumbo · Carrera de Software · FISEI – UTA</p>
+</div>
+<aside class="notes">Agradezco al tribunal y quedo atento a sus preguntas.</aside>
+</section>
+</div>
+</div>
+<script src="vendor/reveal/reveal.js"></script>
+<script src="vendor/reveal/plugin/notes.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+/* Animaciones: el estado normal es el final; la animacion solo corre en la diapositiva activa (.present). */
+@keyframes rise { from { opacity: 0; transform: translateY(28px); } to { opacity: 1; transform: none; } }
+@keyframes fadein { from { opacity: 0; } to { opacity: 1; } }
+@keyframes growX { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@keyframes growY { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+@keyframes pop { from { opacity: 0; transform: scale(.6); } to { opacity: 1; transform: scale(1); } }
+@keyframes draw { from { stroke-dashoffset: 400; } to { stroke-dashoffset: 0; } }
+
+.present .kicker { animation: fadein .5s ease both; }
+.present .title { animation: rise .6s cubic-bezier(.2,.7,.2,1) both; }
+.present .stagger > * { animation: rise .6s cubic-bezier(.2,.7,.2,1) both; animation-delay: calc(250ms + var(--i, 0) * 110ms); }
+
+.hbar .bar { transform-origin: left center; }
+.present .hbar .bar { animation: growX .9s cubic-bezier(.2,.7,.2,1) both; animation-delay: calc(400ms + var(--i, 0) * 90ms); }
+.present .hbar .val { animation: fadein .4s ease both; animation-delay: calc(1000ms + var(--i, 0) * 90ms); }
+.vb .bar { transform-origin: center bottom; }
+.present .vb .bar { animation: growY .9s cubic-bezier(.2,.7,.2,1) both; animation-delay: calc(400ms + var(--i, 0) * 120ms); }
+.present .vb .val { animation: fadein .4s ease both; animation-delay: calc(1000ms + var(--i, 0) * 120ms); }
+
+.present .cell { animation: pop .45s cubic-bezier(.3,1.4,.5,1) both; animation-delay: calc(300ms + var(--i, 0) * 30ms); }
+.present .center-pop { animation: pop .6s cubic-bezier(.3,1.4,.5,1) both; animation-delay: .3s; }
+.lines line { stroke-dasharray: 400; }
+.present .lines line { animation: draw .8s ease both; animation-delay: .7s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .present * { animation: none !important; }
+}
